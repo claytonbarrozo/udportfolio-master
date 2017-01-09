@@ -62,4 +62,4 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://www.84colors.com/work.html">http://www.84colors.com/work.html</a>
 
 ### My updates
-* Changed the size of the pictures
+* Used imageoptim to decrease the size of the pictures
