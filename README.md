@@ -14,7 +14,7 @@ Some useful tips to help you get started:
   $> python -m SimpleHTTPServer 8080
   ```
 
-1. Open a browser and visit localhost:8080
+1. Open a browser and visit 8080localhost:
 1. Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely.
 
   ``` bash
@@ -60,3 +60,6 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://yourjustlucky.com/">http://yourjustlucky.com/</a>
 * <a href="http://nicoledominguez.com/portfolio/">http://nicoledominguez.com/portfolio/</a>
 * <a href="http://www.84colors.com/work.html">http://www.84colors.com/work.html</a>
+
+### My updates
+* Changed the size of the pictures
