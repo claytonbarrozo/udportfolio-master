@@ -63,3 +63,4 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 
 ### My updates
 * Used imageoptim to decrease the size of the pictures
+* Created a gulp file 
