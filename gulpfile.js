@@ -4,7 +4,7 @@ var gulp = require ('gulp'),
 // Iamge Task
 // Compress
 gulp.task ('image',function() {
-gulp.src('img/*')
+gulp.src('views/images/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('img/*'));
+		.pipe(gulp.dest('views/images'));
 });
