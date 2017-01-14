@@ -65,4 +65,6 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * Used imageoptim to decrease the size of the pictures
 * Created a gulp file 
 * Added a Script to call external javascript file on pizza.html and index.html
-* Decreased the size of all the pictures
+* Decreased the size of all the pictures by using gulp
+* Created a minjs file for the minified js files 
+* Compressed all the pictures 
