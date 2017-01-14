@@ -68,3 +68,4 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * Decreased the size of all the pictures by using gulp
 * Created a minjs file for the minified js files 
 * Compressed all the pictures 
+* added backface-visibility: hidden; in css in mover class
