@@ -1,9 +1,10 @@
+var gulp = require ('gulp'),
+	imagemin = require ('gulp-imagemin');
 
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
- 
-gulp.task('default', function() {
-  return gulp.src('styles/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist'));
+// Iamge Task
+// Compress
+gulp.task ('image',function() {
+gulp.src('views/images/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('views/images'));
 });
