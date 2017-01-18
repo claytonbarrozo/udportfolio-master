@@ -62,10 +62,56 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://www.84colors.com/work.html">http://www.84colors.com/work.html</a>
 
 ### My updates
-* Used imageoptim to decrease the size of the pictures
-* Created a gulp file 
-* Added a Script to call external javascript file on pizza.html and index.html
-* Decreased the size of all the pictures by using gulp
-* Created a minjs file for the minified js files 
-* Compressed all the pictures 
-* added backface-visibility: hidden; in css in mover class
+	
+	* Created a gulp file 
+	* Decreased the size of all the pictures by using gulp
+	* Created a minjs file for the minified js files 
+	* Compressed all the pictures 
+	* I have already run gulp to optimise the CSS and img, all you have to do is to run index.html
+
+
+	## Main
+
+		* Used imageoptim to decrease the size of the pictures
+		* line 454 on the main.js - Moved dx and newwidth out side of the loop and changed the code from document.querySeletorAll() to document.getElementsByClassName()
+		* in ChangeSliderLabel I Changed the querySelector to getElementById as its Web API is Faster
+		* In windwwidth I changed the code from querySelector to getElementById as its Web API call is faster
+		* Moved pzzasDiv outside of the loop so only DOM call is made one.
+		* Created a local varibal to save top outside of the loop, this will prevent the DOM being explicitly touched in every iteration.
+		* M0ved the container outside of the loop
+		* Moved the getElementoBy Id to outside of the look so movingPizzas its WEB API call is faster 
+
+	## Style.Css
+
+		* added backface-visibility: hidden; in css in mover class
+		* In Syle.css the vendor prefixes were included, I used Autoprefixer CSS online.
+
+
+	## Index.html
+
+		* Added a Script to call external javascript file on pizza.html and index.html
+		* in index.html I moved the link to the head instead of the bottom of the html file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

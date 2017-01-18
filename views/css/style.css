@@ -34,11 +34,14 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .randomPizzaContainer {
   float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
