@@ -80,6 +80,7 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 		* Created a local varibal to save top outside of the loop, this will prevent the DOM being explicitly touched in every iteration.
 		* M0ved the container outside of the loop
 		* Moved the getElementoBy Id to outside of the look so movingPizzas its WEB API call is faster 
+		* Fixed the calcuation in order to move the pizzas
 
 	## Style.Css
 
