@@ -450,18 +450,22 @@ var resizePizzas = function(size) {
   }
 
    // Moved dx and newwidth out side of the loop and changed the code from document.querySeletorAll() to document.getElementsByClassName() as its Web API call is faster
-    var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[i], size);
+   // Changed the i to 0 in the dx code
+    var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[0], size);
     var newwidth = (document.getElementsByClassName("randomPizzaContainer")[i].offsetWidth + dx) + 'px';
           
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
    
-    
+    // TO UPDATE LATER You created container and assigned every elements with the classname 
+    // randomPizzaContainer to it. Instead of querying the DOM in this loop 2 times for every
+    // iteration, you should make use of container (i.e. use it instead of document.querySelectorAll(".randomPizzaContainer")).
     var container = document.getElementsByClassName('randomPizzaContainer');
     
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
+    // added container instead of document.getElementsByClassName('randomPizzaContainer')
+    for (var i = 0; i < container.length; i++) {
       
-    document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    container[i].style.width = newwidth;
    }
   }
 
@@ -511,14 +515,14 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
-  var items = document.querySelectorAll('.mover');
+  // added the getElementsByClassName instead of querySelectorAll - this makes the code to run faster
+  var items = document.getElementsByClassName('mover');
 
   // Created a local varibal to save top outside of the loop, this will prevent the DOM being explicitly touched in every iteration.
   var top = document.body.scrollTop / 1250;
 
   for (var i = 0, len = items.length, phase; i < len; i++) {
-    phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+   var phase = Math.sin((top) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 

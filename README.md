@@ -81,6 +81,10 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 		* M0ved the container outside of the loop
 		* Moved the getElementoBy Id to outside of the look so movingPizzas its WEB API call is faster 
 		* Fixed the calcuation in order to move the pizzas
+		* Added the getElementsByClassName in updatepositions (mover) instead of querySelectorAll - this makes the code to run faster
+		* added container instead of document.getElementsByClassName('randomPizzaContainer')
+
+
 
 	## Style.Css
 
